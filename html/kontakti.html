@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - GreenCrete</title>
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/kontakti.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                <i class="fas fa-leaf text-leaf text-2xl"></i>
+                <a href="index.html">GreenCrete</a>
+            </div>
+        </div>
+        <div class="nav-middle">
+            <div class="menu">
+                <ul>
+                    <li><a href="resheniya.html">Решения</a></li>
+                    <li><a href="ustoychivost.html">Устойчивост</a></li>
+                    <li><a href="proekti.html">Проекти</a></li>
+                    <li><a href="partniori.html">Партньори</a></li>
+                    <li><a href="novini.html">Новини</a></li>
+                    <li><a href="kontakti.html" class="active">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu" onclick="openMenu()">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="drop-menu">
+                    <ul>
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="resheniya.html">Решения</a></li>
+                        <li><a href="ustoychivost.html">Устойчивост</a></li>
+                        <li><a href="proekti.html">Проекти</a></li>
+                        <li><a href="partniori.html">Партньори</a></li>
+                        <li><a href="novini.html">Новини</a></li>
+                        <li><a href="kontakti.html">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="quote">
+                <button class="quote-button">
+                    Поискай Оферта
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Свържете се с Нас</h1>
+            <p>Готови сме да отговорим на вашите въпроси</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="contact-main">
+            <div class="contact-info">
+                <h2>Контактна Информация</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h3>Адрес</h3>
+                            <p>бул. Цариградско шосе 125<br>София 1113, България</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h3>Телефон</h3>
+                            <p>+359 2 123 4567<br>+359 888 123 456</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h3>Имейл</h3>
+                            <p>info@greencrete.bg<br>sales@greencrete.bg</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-text">
+                            <h3>Работно Време</h3>
+                            <p>Понеделник - Петък: 9:00 - 18:00<br>Събота: 10:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <h3>Следвайте ни</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Изпратете Съобщение</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <input type="text" placeholder="Име *" required id="contactName">
+                        <input type="text" placeholder="Фамилия *" required id="contactSurname">
+                    </div>
+                    <div class="form-row">
+                        <input type="email" placeholder="Имейл *" required id="contactEmail">
+                        <input type="tel" placeholder="Телефон" id="contactPhone">
+                    </div>
+                    <select id="contactSubject" required>
+                        <option value="">Изберете тема *</option>
+                        <option value="quote">Заявка за оферта</option>
+                        <option value="info">Обща информация</option>
+                        <option value="partnership">Партньорство</option>
+                        <option value="support">Техническа поддръжка</option>
+                        <option value="other">Друго</option>
+                    </select>
+                    <textarea placeholder="Вашето съобщение *" required rows="6" id="contactMessage"></textarea>
+                    <button type="submit" class="submit-contact-btn">Изпрати Съобщение</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="map-container" id="mapContainer">
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Интерактивна карта</p>
+            </div>
+        </div>
+
+        <div class="office-locations">
+            <h2>Нашите Офиси</h2>
+            <div class="offices-grid" id="officesGrid">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="main-footer">
+            <div class="logo-footer">
+                <i class="fas fa-leaf text-leaf text-2xl"><a href="index.html">&nbsp;GreenCrete</a></i>
+                <p>Пионери в бъдещето на устойчивите строителни материали от 26.12.2025</p>
+            </div>
+            <div class="footer-left">
+                <h3>Продукти</h3>
+                <ul>
+                    <li><a href="resheniya.html">Пропускливи Смеси</a></li>
+                    <li><a href="resheniya.html">Рециклиран Агрегат</a></li>
+                    <li><a href="resheniya.html">Декоративен Еко</a></li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="ustoychivost.html">Нашата Мисия</a></li>
+                    <li><a href="ustoychivost.html">Доклад за Устойчивост</a></li>
+                    <li><a href="kontakti.html">Кариери</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Контакт</h3>    
+                <ul>
+                    <li><a href="kontakti.html">+359 2 123 4567</a></li>
+                    <li><a href="kontakti.html">info@greencrete.bg</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            <p>© 2024 GreenCrete Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/contact.js"></script>
+    <script src="../script/downloads.js"></script>
+</body>
+</html>
+

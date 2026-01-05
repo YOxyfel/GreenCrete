@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Партньори - GreenCrete</title>
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/partniori.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                <i class="fas fa-leaf text-leaf text-2xl"></i>
+                <a href="index.html">GreenCrete</a>
+            </div>
+        </div>
+        <div class="nav-middle">
+            <div class="menu">
+                <ul>
+                    <li><a href="resheniya.html">Решения</a></li>
+                    <li><a href="ustoychivost.html">Устойчивост</a></li>
+                    <li><a href="proekti.html">Проекти</a></li>
+                    <li><a href="partniori.html" class="active">Партньори</a></li>
+                    <li><a href="novini.html">Новини</a></li>
+                    <li><a href="kontakti.html">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu" onclick="openMenu()">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="drop-menu">
+                    <ul>
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="resheniya.html">Решения</a></li>
+                        <li><a href="ustoychivost.html">Устойчивост</a></li>
+                        <li><a href="proekti.html">Проекти</a></li>
+                        <li><a href="partniori.html">Партньори</a></li>
+                        <li><a href="novini.html">Новини</a></li>
+                        <li><a href="kontakti.html">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="quote">
+                <button class="quote-button">
+                    Поискай Оферта
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Нашите Партньори</h1>
+            <p>Работим с водещи компании за устойчиво бъдеще</p>
+        </div>
+    </section>
+
+    <section class="partners-content">
+        <div class="partners-intro">
+            <h2>Стратегически Партньорства</h2>
+            <p>GreenCrete работи с редица водещи компании, организации и институции, за да създадем по-устойчива строителна индустрия. Нашите партньори споделят нашата визия за екологично отговорно строителство и работят с нас за постигане на общи цели.</p>
+        </div>
+
+        <div class="partners-categories">
+            <div class="partner-category">
+                <h3><i class="fas fa-industry"></i> Индустриални Партньори</h3>
+                <div class="partners-grid" id="industrialPartners">
+                </div>
+            </div>
+
+            <div class="partner-category">
+                <h3><i class="fas fa-university"></i> Академични Партньори</h3>
+                <div class="partners-grid" id="academicPartners">
+                </div>
+            </div>
+
+            <div class="partner-category">
+                <h3><i class="fas fa-handshake"></i> Стратегически Партньори</h3>
+                <div class="partners-grid" id="strategicPartners">
+                </div>
+            </div>
+        </div>
+
+        <section class="partnership-benefits">
+            <h2>Предимства от Партньорство</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Иновации</h3>
+                    <p>Съвместна работа по разработване на нови технологии и решения за устойчиво строителство.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Глобален Обхват</h3>
+                    <p>Разширяване на обхвата на нашите решения чрез международни партньорства.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Сертификация</h3>
+                    <p>Достъп до най-новите стандарти и сертификации в индустрията.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-users"></i></div>
+                    <h3>Експертиза</h3>
+                    <p>Обмен на знания и опит с водещи експерти в строителството.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="become-partner">
+            <div class="become-partner-content">
+                <h2>Станете Наш Партньор</h2>
+                <p>Ако сте компания или организация, която споделя нашите ценности и иска да работи с нас, не се колебайте да се свържете!</p>
+                <div class="partner-form">
+                    <input type="text" placeholder="Име на компанията" id="companyName">
+                    <input type="email" placeholder="Имейл" id="partnerEmail">
+                    <textarea placeholder="Разкажете ни за себе си..." id="partnerMessage"></textarea>
+                    <button class="submit-partner-btn">Изпрати Заявка</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div class="main-footer">
+            <div class="logo-footer">
+                <i class="fas fa-leaf text-leaf text-2xl"><a href="index.html">&nbsp;GreenCrete</a></i>
+                <p>Пионери в бъдещето на устойчивите строителни материали от 26.12.2025</p>
+            </div>
+            <div class="footer-left">
+                <h3>Продукти</h3>
+                <ul>
+                    <li><a href="resheniya.html">Пропускливи Смеси</a></li>
+                    <li><a href="resheniya.html">Рециклиран Агрегат</a></li>
+                    <li><a href="resheniya.html">Декоративен Еко</a></li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="ustoychivost.html">Нашата Мисия</a></li>
+                    <li><a href="ustoychivost.html">Доклад за Устойчивост</a></li>
+                    <li><a href="kontakti.html">Кариери</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Контакт</h3>    
+                <ul>
+                    <li><a href="kontakti.html">+359 2 123 4567</a></li>
+                    <li><a href="kontakti.html">info@greencrete.bg</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            <p>© 2024 GreenCrete Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/partners.js"></script>
+    <script src="../script/downloads.js"></script>
+</body>
+</html>
+

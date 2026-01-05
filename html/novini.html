@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини - GreenCrete</title>
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/novini.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                <i class="fas fa-leaf text-leaf text-2xl"></i>
+                <a href="index.html">GreenCrete</a>
+            </div>
+        </div>
+        <div class="nav-middle">
+            <div class="menu">
+                <ul>
+                    <li><a href="resheniya.html">Решения</a></li>
+                    <li><a href="ustoychivost.html">Устойчивост</a></li>
+                    <li><a href="proekti.html">Проекти</a></li>
+                    <li><a href="partniori.html">Партньори</a></li>
+                    <li><a href="novini.html" class="active">Новини</a></li>
+                    <li><a href="kontakti.html">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu" onclick="openMenu()">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="drop-menu">
+                    <ul>
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="resheniya.html">Решения</a></li>
+                        <li><a href="ustoychivost.html">Устойчивост</a></li>
+                        <li><a href="proekti.html">Проекти</a></li>
+                        <li><a href="partniori.html">Партньори</a></li>
+                        <li><a href="novini.html">Новини</a></li>
+                        <li><a href="kontakti.html">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="quote">
+                <button class="quote-button">
+                    Поискай Оферта
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Новини и Събития</h1>
+            <p>Бъдете в течение с последните новини от GreenCrete</p>
+        </div>
+    </section>
+
+    <section class="news-content">
+        <div class="news-filters">
+            <button class="filter-btn active" data-filter="all">Всички</button>
+            <button class="filter-btn" data-filter="projects">Проекти</button>
+            <button class="filter-btn" data-filter="awards">Награди</button>
+            <button class="filter-btn" data-filter="technology">Технология</button>
+            <button class="filter-btn" data-filter="sustainability">Устойчивост</button>
+        </div>
+
+        <div class="news-grid" id="newsGrid">
+        </div>
+
+        <div class="news-pagination" id="newsPagination">
+        </div>
+    </section>
+
+    <section class="newsletter-signup">
+        <div class="newsletter-content">
+            <h2>Абонирайте се за нашия бюлетин</h2>
+            <p>Получавайте най-новите новини и актуализации директно в пощенската си кутия</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Вашият имейл" id="newsletterEmail">
+                <button class="newsletter-submit">Абонирай се</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="main-footer">
+            <div class="logo-footer">
+                <i class="fas fa-leaf text-leaf text-2xl"><a href="index.html">&nbsp;GreenCrete</a></i>
+                <p>Пионери в бъдещето на устойчивите строителни материали от 26.12.2025</p>
+            </div>
+            <div class="footer-left">
+                <h3>Продукти</h3>
+                <ul>
+                    <li><a href="resheniya.html">Пропускливи Смеси</a></li>
+                    <li><a href="resheniya.html">Рециклиран Агрегат</a></li>
+                    <li><a href="resheniya.html">Декоративен Еко</a></li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="ustoychivost.html">Нашата Мисия</a></li>
+                    <li><a href="ustoychivost.html">Доклад за Устойчивост</a></li>
+                    <li><a href="kontakti.html">Кариери</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Контакт</h3>    
+                <ul>
+                    <li><a href="kontakti.html">+359 2 123 4567</a></li>
+                    <li><a href="kontakti.html">info@greencrete.bg</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            <p>© 2024 GreenCrete Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/news.js"></script>
+    <script src="../script/downloads.js"></script>
+</body>
+</html>
+

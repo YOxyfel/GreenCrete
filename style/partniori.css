@@ -1,0 +1,361 @@
+.partners-content
+{
+    padding: 5rem 3rem;
+    background-color: var(--bg);
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @media (max-width: 768px)
+{
+        padding: 3rem 1.5rem;
+    }
+
+    @media (max-width: 480px)
+{
+        padding: 2rem 1rem;
+    }
+}
+
+.partners-intro
+{
+    text-align: center;
+    margin-bottom: 4rem;
+
+    & h2
+    {
+        font-size: 36px;
+        color: var(--nav-bg);
+        margin-bottom: 1.5rem;
+
+        @media (max-width: 768px)
+{
+            font-size: 28px;
+        }
+    }
+
+    & p
+    {
+        font-size: 18px;
+        color: var(--p-color);
+        max-width: 900px;
+        margin: 0 auto;
+        line-height: 1.8;
+
+        @media (max-width: 768px)
+{
+            font-size: 16px;
+        }
+    }
+}
+
+.partner-category
+{
+    margin-bottom: 4rem;
+
+    & h3
+    {
+        font-size: 28px;
+        color: var(--nav-bg);
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        @media (max-width: 768px)
+{
+            font-size: 24px;
+        }
+
+        & i
+        {
+            color: var(--button-accent);
+        }
+    }
+}
+
+.partners-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+
+    @media (max-width: 768px)
+{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px)
+{
+        grid-template-columns: 1fr;
+    }
+}
+
+.partner-card
+{
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover
+    {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    & h4
+    {
+        font-size: 20px;
+        color: var(--nav-bg);
+        margin-bottom: 1rem;
+    }
+
+    & p
+    {
+        color: var(--p-color);
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+}
+
+.partner-logo
+{
+    font-size: 64px;
+    margin-bottom: 1rem;
+    color: var(--button-accent);
+}
+
+.partner-since
+{
+    color: var(--button-accent);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.partnership-benefits
+{
+    margin: 5rem 0;
+    padding: 3rem;
+    background: white;
+    border-radius: 15px;
+
+    @media (max-width: 768px)
+{
+        padding: 2rem 1.5rem;
+        margin: 3rem 0;
+    }
+
+    & h2
+    {
+        text-align: center;
+        font-size: 32px;
+        color: var(--nav-bg);
+        margin-bottom: 3rem;
+
+        @media (max-width: 768px)
+{
+            font-size: 24px;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.benefits-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+
+    @media (max-width: 768px)
+{
+        grid-template-columns: 1fr;
+    }
+}
+
+.benefit-card
+{
+    text-align: center;
+    padding: 2rem;
+
+    & h3
+    {
+        font-size: 22px;
+        color: var(--nav-bg);
+        margin-bottom: 1rem;
+    }
+
+    & p
+    {
+        color: var(--p-color);
+        line-height: 1.6;
+    }
+}
+
+.benefit-icon
+{
+    font-size: 48px;
+    color: var(--button-accent);
+    margin-bottom: 1rem;
+}
+
+.become-partner
+{
+    background: linear-gradient(135deg, var(--nav-bg) 0%, #1a3a2e 100%);
+    padding: 5rem 3rem;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+
+    @media (max-width: 768px)
+{
+        padding: 3rem 1.5rem;
+    }
+}
+
+.become-partner-content
+{
+    & h2
+    {
+        font-size: 32px;
+        margin-bottom: 1rem;
+
+        @media (max-width: 768px)
+{
+            font-size: 24px;
+        }
+    }
+
+    & p
+    {
+        font-size: 18px;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+
+        @media (max-width: 768px)
+{
+            font-size: 16px;
+        }
+    }
+}
+
+.partner-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+
+    & input,
+    & textarea
+    {
+        padding: 1rem;
+        border-radius: 10px;
+        border: none;
+        font-size: 16px;
+        font-family: inherit;
+    }
+
+    & textarea
+    {
+        min-height: 120px;
+        resize: vertical;
+    }
+}
+
+.submit-partner-btn
+{
+    background-color: var(--button-accent);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+
+    &:hover
+    {
+        background: #45a049;
+        transform: translateY(-2px);
+    }
+}
+
+.page-hero
+{
+    background: linear-gradient(135deg, var(--nav-bg) 0%, #1a3a2e 100%);
+    color: white;
+    padding: 8rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 768px)
+{
+        padding: 5rem 2rem;
+    }
+
+    @media (max-width: 480px)
+{
+        padding: 4rem 1.5rem;
+    }
+
+    &::before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 50% 50%, rgba(76, 175, 80, 0.1) 0%, transparent 70%);
+        pointer-events: none;
+    }
+
+    & .page-hero-content
+    {
+        position: relative;
+        z-index: 1;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        & h1
+        {
+            font-size: 48px;
+            margin-bottom: 1rem;
+            font-weight: 700;
+
+            @media (max-width: 768px)
+            {
+                font-size: 36px;
+            }
+
+            @media (max-width: 480px)
+            {
+                font-size: 28px;
+            }
+        }
+
+        & p
+        {
+            font-size: 20px;
+            opacity: 0.9;
+
+            @media (max-width: 768px)
+            {
+                font-size: 18px;
+            }
+
+            @media (max-width: 480px)
+            {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
